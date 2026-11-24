@@ -1,0 +1,8 @@
+{
+  "runtime": "static",
+  "platformVersion": 15,
+  "entry": "index.html",
+  "name": "Bantaba River & Eco-Tourism Website",
+  "slug": "bantaba-river-eco-tourism-website",
+  "managedCronJobs": []
+}

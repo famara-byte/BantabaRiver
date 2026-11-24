@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="theme-color" content="#0b2e22" />
+<meta name="description" content="Bantaba River & Eco-Tourism — river tours and nature & culture experiences on and around the River Gambia. Based in Senegambia, Kanifing, The Gambia. Discover The Gambia... Naturally!" />
+<link rel="icon" href="data:," />
+<title>Bantaba River &amp; Eco-Tourism — Discover The Gambia... Naturally!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#fbfdf8;
+    --bg-alt:#e9f1df;
+    --surface:#ffffff;
+    --surface-2:#f6f7f1;
+    --ink:#13261d;
+    --ink-2:#33473c;
+    --muted:#5d7065;
+    --line:#dde3d6;
+    --green-950:#08231a;
+    --green-900:#0b2e22;
+    --green-800:#103a2b;
+    --green-700:#175c40;
+    --green-600:#1f7a55;
+    --gold:#b98a1e;
+    --gold-strong:#9a7214;
+    --gold-bright:#d9a92c;
+    --gold-pale:#f3e5b8;
+    --river:#2f7d9d;
+    --river-dark:#1f5f7a;
+    --shadow:0 18px 40px rgba(11,46,34,.12);
+    --shadow-sm:0 8px 24px rgba(11,46,34,.10);
+    --radius:18px;
+    --radius-sm:12px;
+    --font-display:"Lora", Georgia, "Times New Roman", serif;
+    --font-body:"Public Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0a1f17;
+      --bg-alt:#0e2a1f;
+      --surface:#122e22;
+      --surface-2:#163627;
+      --ink:#edf4ee;
+      --ink-2:#cfe0d3;
+      --muted:#a7bcae;
+      --line:#234434;
+      --green-950:#061812;
+      --green-900:#0b2e22;
+      --green-800:#103a2b;
+      --gold:#d9a92c;
+      --gold-strong:#e8c86a;
+      --gold-pale:#3a331a;
+      --shadow:0 18px 40px rgba(0,0,0,.35);
+      --shadow-sm:0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important; transition:none!important} }
+  body{margin:0; font-family:var(--font-body); background:var(--bg); color:var(--ink); line-height:1.65; -webkit-font-smoothing:antialiased}
+  img{max-width:100%; display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:var(--font-display); line-height:1.12; margin:0; font-weight:600; letter-spacing:-.01em}
+  p{margin:0}
+  .wrap{width:min(1180px, calc(100% - 40px)); margin:0 auto}
+  .section{padding:84px 0}
+  .section--alt{background:var(--bg-alt)}
+  .section-head{max-width:720px; margin-bottom:36px}
+  .section-head h2{font-size:clamp(30px,4.4vw,44px); margin-bottom:12px}
+  .section-head p{color:var(--muted); font-size:17px}
+  .label{font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-strong); margin-bottom:12px; display:flex; align-items:center; gap:10px}
+  .label::before{content:""; width:28px; height:2px; background:var(--gold-bright); display:inline-block}
+  .btn{display:inline-flex; align-items:center; gap:9px; border:1px solid transparent; border-radius:999px; padding:13px 22px; font-weight:700; font-size:15px; text-decoration:none; cursor:pointer; transition:transform .15s ease, background .15s ease, border-color .15s ease; white-space:nowrap}
+  .btn:active{transform:scale(.98)}
+  .btn-gold{background:var(--gold-bright); color:#1a1403; border-color:var(--gold-bright)}
+  .btn-gold:hover{background:#e6bc45}
+  .btn-green{background:var(--green-800); color:#fff; border-color:var(--green-800)}
+  .btn-green:hover{background:var(--green-700)}
+  .btn-outline{background:transparent; color:var(--ink); border-color:var(--line)}
+  .btn-outline:hover{border-color:var(--green-700); color:var(--green-700)}
+  .btn-white-outline{background:rgba(255,255,255,.08); color:#fff; border-color:rgba(255,255,255,.45); backdrop-filter:blur(4px)}
+  .btn-white-outline:hover{background:rgba(255,255,255,.18)}
+
+  /* Header */
+  header.site{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line)}
+  .nav{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0}
+  .brand{display:flex; align-items:center; gap:12px; text-decoration:none; min-width:0}
+  .brand-mark{width:46px; height:46px; flex:0 0 46px; border-radius:50%; overflow:hidden; box-shadow:var(--shadow-sm); background:#e6f0e2}
+  .brand-text{line-height:1.15; min-width:0}
+  .brand-text strong{font-family:var(--font-display); font-size:17px; display:block; white-space:nowrap}
+  .brand-text span{font-size:11.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold-strong); font-weight:700}
+  .nav-links{display:flex; align-items:center; gap:26px}
+  .nav-links a{text-decoration:none; font-weight:600; font-size:15px; color:var(--ink-2)}
+  .nav-links a:hover, .nav-links a.active{color:var(--green-700)}
+  @media (prefers-color-scheme: dark){ .nav-links a:hover, .nav-links a.active{color:var(--gold-bright)} }
+  .nav-cta{display:flex; gap:10px; align-items:center}
+  .menu-btn{display:none; width:44px; height:44px; border-radius:10px; border:1px solid var(--line); background:var(--surface); cursor:pointer; align-items:center; justify-content:center}
+  .menu-btn svg{width:22px; height:22px}
+  .mobile-menu{display:none; border-top:1px solid var(--line); padding:14px 0 18px}
+  .mobile-menu.open{display:block}
+  .mobile-menu a{display:block; padding:11px 4px; text-decoration:none; font-weight:600; border-bottom:1px solid var(--line)}
+  .mobile-menu a:last-child{border-bottom:none}
+  @media (max-width:860px){ .nav-links{display:none} .nav-cta .btn{display:none} .menu-btn{display:inline-flex} .brand-text strong{white-space:normal; font-size:16px} }
+
+  /* Hero */
+  .hero{position:relative; background:var(--green-950); color:#fff; overflow:hidden}
+  .hero-media{position:absolute; inset:0}
+  .hero-media img{width:100%; height:100%; object-fit:cover; object-position:center 42%}
+  .hero-media::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(6,24,18,.42) 0%, rgba(6,24,18,.18) 38%, rgba(6,24,18,.78) 100%), linear-gradient(90deg, rgba(6,24,18,.62) 0%, rgba(6,24,18,.08) 62%)}
+  .hero-inner{position:relative; z-index:1; padding:76px 0 0; display:flex; flex-direction:column; min-height:640px}
+  .hero-copy{max-width:680px; padding-bottom:28px}
+  .hero-badge{display:inline-flex; align-items:center; gap:9px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.28); backdrop-filter:blur(6px); padding:8px 14px; border-radius:999px; font-size:13px; font-weight:600; margin-bottom:20px}
+  .hero-badge i{width:8px; height:8px; border-radius:50%; background:var(--gold-bright); display:inline-block}
+  .hero h1{font-size:clamp(42px,7vw,72px); font-weight:600; margin-bottom:18px}
+  .hero h1 em{font-style:italic; color:var(--gold-bright)}
+  .hero-sub{font-size:clamp(16px,2.2vw,19px); color:rgba(255,255,255,.9); max-width:560px; margin-bottom:26px}
+  .hero-actions{display:flex; flex-wrap:wrap; gap:12px; margin-bottom:26px}
+  .hero-meta{display:flex; flex-wrap:wrap; gap:10px 22px; font-size:14px; color:rgba(255,255,255,.88)}
+  .hero-meta span{display:inline-flex; gap:8px; align-items:center}
+  .hero-strip{margin-top:auto; border-top:1px solid rgba(255,255,255,.22); background:rgba(6,24,18,.42); backdrop-filter:blur(8px)}
+  .hero-strip-inner{display:grid; grid-template-columns:repeat(3,1fr); }
+  .pillar-mini{padding:20px 22px; border-right:1px solid rgba(255,255,255,.16)}
+  .pillar-mini:last-child{border-right:none}
+  .pillar-mini strong{font-family:var(--font-display); font-size:19px; display:block; color:#fff}
+  .pillar-mini span{font-size:13.5px; color:rgba(255,255,255,.78)}
+  @media (max-width:700px){ .hero-inner{min-height:0; padding-top:52px} .hero-strip-inner{grid-template-columns:1fr} .pillar-mini{border-right:none; border-bottom:1px solid rgba(255,255,255,.14); padding:16px 4px} .pillar-mini:last-child{border-bottom:none} }
+
+  /* About */
+  .about-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center}
+  @media (max-width:880px){ .about-grid{grid-template-columns:1fr} }
+  .about-copy h2{font-size:clamp(30px,4.4vw,42px); margin-bottom:16px}
+  .about-copy p{color:var(--ink-2); margin-bottom:14px; font-size:16.5px}
+  .about-points{margin-top:22px; display:grid; gap:14px}
+  .about-point{display:flex; gap:14px; align-items:flex-start; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-sm); padding:16px}
+  .about-point-icon{width:42px; height:42px; flex:0 0 42px; border-radius:10px; background:var(--bg-alt); display:grid; place-items:center; color:var(--green-700)}
+  .about-point strong{display:block; margin-bottom:2px}
+  .about-point p{font-size:14.5px; color:var(--muted); margin:0}
+  .about-visual{position:relative}
+  .about-visual-main{border-radius:20px; overflow:hidden; box-shadow:var(--shadow)}
+  .about-visual-main img{width:100%; height:440px; object-fit:cover}
+  .about-visual-card{position:absolute; left:18px; bottom:18px; right:18px; background:var(--green-900); color:#fff; border-radius:14px; padding:18px 20px; display:flex; gap:16px; align-items:center}
+  .about-visual-card p{font-family:var(--font-display); font-size:17px; line-height:1.4; font-style:italic}
+  .about-visual-card span{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold-bright); font-weight:700; font-family:var(--font-body); font-style:normal; display:block; margin-bottom:4px}
+  @media (max-width:520px){ .about-visual-main img{height:340px} }
+
+  /* Experiences */
+  .filters{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:26px}
+  .chip{border:1px solid var(--line); background:var(--surface); color:var(--ink-2); padding:9px 16px; border-radius:999px; font-weight:600; font-size:14px; cursor:pointer}
+  .chip[aria-pressed="true"]{background:var(--green-800); color:#fff; border-color:var(--green-800)}
+  .exp-featured{display:grid; grid-template-columns:1.15fr .85fr; background:var(--surface); border:1px solid var(--line); border-radius:20px; overflow:hidden; box-shadow:var(--shadow-sm); margin-bottom:22px}
+  @media (max-width:820px){ .exp-featured{grid-template-columns:1fr} }
+  .exp-featured img{width:100%; height:100%; min-height:300px; object-fit:cover}
+  .exp-body{padding:28px}
+  .exp-tag{font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--green-700); margin-bottom:10px}
+  @media (prefers-color-scheme: dark){ .exp-tag{color:#8fd0a8} }
+  .new-badge{position:absolute; top:14px; left:14px; z-index:2; background:var(--green-700); color:#fff; font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:6px 12px; border-radius:999px; box-shadow:var(--shadow-sm)}
+  .exp-body h3{font-size:28px; margin-bottom:10px}
+  .exp-body p{color:var(--muted); margin-bottom:16px}
+  .exp-list{list-style:none; margin:0 0 20px; padding:0; display:grid; gap:9px}
+  .exp-list li{display:flex; gap:10px; font-size:14.5px; color:var(--ink-2)}
+  .exp-list li::before{content:"—"; color:var(--gold-strong); font-weight:700}
+  .exp-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px}
+  @media (max-width:820px){ .exp-grid{grid-template-columns:1fr} }
+  .exp-card{position:relative; background:var(--surface); border:1px solid var(--line); border-radius:20px; overflow:hidden; box-shadow:var(--shadow-sm); display:flex; flex-direction:column}
+  .exp-card img{width:100%; height:230px; object-fit:cover}
+  .exp-card .exp-body{padding:24px; display:flex; flex-direction:column; flex:1}
+  .exp-card h3{font-size:24px}
+  .exp-card .exp-body p{flex:1}
+  .exp-link{font-weight:700; color:var(--green-700); text-decoration:none; display:inline-flex; gap:8px; align-items:center}
+  .exp-link:hover{text-decoration:underline}
+  @media (prefers-color-scheme: dark){ .exp-link{color:var(--gold-bright)} }
+  .hidden-card{display:none!important}
+  .exp-note{margin-top:20px; font-size:14.5px; color:var(--muted); background:var(--surface); border:1px dashed var(--line); border-radius:var(--radius-sm); padding:14px 16px}
+
+  /* Banner */
+  .banner{position:relative; border-radius:22px; overflow:hidden; min-height:300px; display:flex; align-items:flex-end; color:#fff}
+  .banner img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
+  .banner::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(6,24,18,.05), rgba(6,24,18,.78))}
+  .banner-content{position:relative; z-index:1; padding:32px; max-width:640px}
+  .banner-content h2{font-size:clamp(26px,4vw,38px); margin-bottom:10px}
+  .banner-content p{color:rgba(255,255,255,.88)}
+
+  /* Sustainability pillars */
+  .pillars{display:grid; gap:0; border-top:1px solid var(--line)}
+  .pillar{display:grid; grid-template-columns:84px 220px 1fr; gap:24px; padding:30px 0; border-bottom:1px solid var(--line); align-items:start}
+  @media (max-width:760px){ .pillar{grid-template-columns:56px 1fr} .pillar p{grid-column:2} }
+  .pillar-num{font-family:var(--font-display); font-size:34px; color:var(--gold-strong); line-height:1}
+  .pillar h3{font-size:26px}
+  .pillar h3 span{display:block; font-family:var(--font-body); font-size:12px; letter-spacing:.13em; text-transform:uppercase; color:var(--muted); font-weight:700; margin-top:6px}
+  .pillar p{color:var(--muted); font-size:16px; max-width:560px}
+  .sustain-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:34px}
+  @media (max-width:760px){ .sustain-grid{grid-template-columns:1fr} }
+  .sustain-card{background:var(--green-900); color:#fff; border-radius:20px; padding:28px}
+  .sustain-card.alt{background:var(--surface); color:var(--ink); border:1px solid var(--line)}
+  .sustain-card h3{font-size:22px; margin-bottom:10px}
+  .sustain-card p{color:rgba(255,255,255,.84); font-size:15.5px}
+  .sustain-card.alt p{color:var(--muted)}
+  .sustain-card ul{margin:14px 0 0; padding-left:18px; color:inherit}
+  .sustain-card li{margin-bottom:7px; font-size:15px}
+
+  /* Contact */
+  .contact-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:28px; align-items:start}
+  @media (max-width:900px){ .contact-grid{grid-template-columns:1fr} }
+  .contact-cards{display:grid; gap:14px}
+  .contact-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-sm); padding:18px; display:flex; gap:16px; align-items:flex-start}
+  .contact-card-icon{width:44px; height:44px; flex:0 0 44px; border-radius:50%; background:var(--green-900); color:#fff; display:grid; place-items:center}
+  .contact-card small{font-size:12px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:var(--muted); display:block; margin-bottom:2px}
+  .contact-card strong{font-size:16.5px; display:block; word-break:break-word}
+  .contact-card a{text-decoration:none}
+  .contact-card a:hover{text-decoration:underline}
+  .contact-card p{font-size:14px; color:var(--muted)}
+  .form-card{background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:28px; box-shadow:var(--shadow-sm)}
+  .form-card h3{font-size:24px; margin-bottom:6px}
+  .form-card > p{color:var(--muted); font-size:15px; margin-bottom:20px}
+  .form-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+  @media (max-width:560px){ .form-grid{grid-template-columns:1fr} }
+  .field{display:grid; gap:7px}
+  .field.full{grid-column:1/-1}
+  .field label{font-size:13.5px; font-weight:700}
+  .field input,.field select,.field textarea{width:100%; border:1px solid var(--line); border-radius:10px; padding:12px 13px; font:inherit; font-size:15px; background:var(--bg); color:var(--ink)}
+  .field textarea{min-height:110px; resize:vertical}
+  .form-actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; align-items:center}
+  .form-status{display:none; margin-top:16px; border-radius:10px; padding:13px 15px; font-size:14.5px; background:var(--bg-alt); border:1px solid var(--line)}
+  .form-status.show{display:block}
+
+  footer{background:var(--green-950); color:#dbe7dd; padding:52px 0 0; margin-top:0}
+  .footer-grid{display:grid; grid-template-columns:1.3fr .7fr .9fr; gap:36px; padding-bottom:36px}
+  @media (max-width:820px){ .footer-grid{grid-template-columns:1fr} }
+  footer h4{font-family:var(--font-display); color:#fff; margin:0 0 14px; font-size:18px}
+  footer a{color:#dbe7dd; text-decoration:none}
+  footer a:hover{color:#fff; text-decoration:underline}
+  .footer-links{list-style:none; margin:0; padding:0; display:grid; gap:9px; font-size:15px}
+  .footer-brand p{color:#a9bfb0; font-size:15px; margin-top:12px; max-width:380px}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.14); padding:18px 0 22px; display:flex; flex-wrap:wrap; gap:10px 20px; justify-content:space-between; font-size:13.5px; color:#93aa9a}
+  .gold-line{color:var(--gold-bright); font-weight:700; letter-spacing:.06em}
+  .reveal{opacity:1}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="Bantaba River and Eco-Tourism — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="46" height="46" role="img" aria-label="Bantaba logo: tree over sun and river">
+            <rect width="100" height="100" fill="#fdf6d8"/>
+            <circle cx="50" cy="42" r="26" fill="#d9a92c"/>
+            <path d="M50 12 C58 22 66 24 68 34 C76 36 78 46 70 52 C66 60 54 60 50 54 C46 60 34 60 30 52 C22 46 24 36 32 34 C34 24 42 22 50 12Z" fill="#175c40"/>
+            <rect x="47.5" y="50" width="5" height="16" rx="2" fill="#6b4423"/>
+            <path d="M14 70 Q26 64 38 70 T62 70 T86 70" fill="none" stroke="#2f7d9d" stroke-width="4" stroke-linecap="round"/>
+            <path d="M18 80 Q30 74 42 80 T66 80 T88 80" fill="none" stroke="#2f7d9d" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+            <path d="M28 68 L72 68 L66 76 L34 76 Z" fill="#103a2b"/>
+            <rect x="48" y="60" width="4" height="8" fill="#103a2b"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Bantaba River &amp; Eco-Tourism</strong>
+          <span>The Gambia · bantabariver.com</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#sustainability">Sustainability</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-green" href="tel:+2207840353">☎ +220 784 0353</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="#about">About</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#sustainability">Sustainability</a>
+      <a href="#contact">Contact &amp; Enquiries</a>
+      <a href="tel:+2207840353">Call +220 784 0353</a>
+      <a href="mailto:info@bantabariver.com">Email info@bantabariver.com</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media"><img src="assets/hero-river.jpg" alt="Aerial view of boats on the wide River Gambia, bordered by green mangrove forest" /></div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <div class="hero-badge"><i></i> Senegambia, Kanifing · On &amp; around the River Gambia</div>
+        <h1>Discover The Gambia… <em>Naturally!</em></h1>
+        <p class="hero-sub">River tours and nature &amp; culture experiences from Bantaba River &amp; Eco-Tourism — slow water, green mangroves, birdlife and village life, explored in a way that helps preserve them.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#experiences">Explore experiences ↓</a>
+          <a class="btn btn-white-outline" href="#contact">Plan your visit</a>
+          <a class="btn btn-white-outline" href="mailto:info@bantabariver.com">Email us</a>
+        </div>
+        <div class="hero-meta">
+          <span>◈ Explore • Experience • Preserve</span>
+          <span>◈ Nature • Culture • Sustainable Tourism</span>
+        </div>
+      </div>
+      <div class="hero-strip">
+        <div class="hero-strip-inner">
+          <div class="pillar-mini"><strong>Explore</strong><span>The river, its creeks and its wildlife</span></div>
+          <div class="pillar-mini"><strong>Experience</strong><span>Gambian nature and culture, up close</span></div>
+          <div class="pillar-mini"><strong>Preserve</strong><span>Travel that protects what you came to see</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <div class="label">About Bantaba</div>
+        <h2>A river company rooted in The Gambia</h2>
+        <p>Bantaba River &amp; Eco-Tourism is an eco-tourism company based in Senegambia, Kanifing (KMC), The Gambia. We run river tours and nature and culture experiences on and around the River Gambia — the waterway that shapes the country’s landscape, wildlife and daily life.</p>
+        <p>Our name comes from the <em>bantaba</em> — the gathering place under the tree where a community meets, talks and welcomes visitors. That is the spirit we bring to the river: unhurried, welcoming, and connected to the people and places along its banks.</p>
+        <p>Every experience is designed around sustainable eco-tourism: small, respectful encounters with nature and culture that give visitors a real sense of The Gambia, while supporting a greener, more beautiful Gambia for the communities who live here.</p>
+        <div class="about-points">
+          <div class="about-point">
+            <div class="about-point-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5-3 8-7.5 8-12V5l-8-3-8 3v5c0 4.5 3 9 8 12z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <div><strong>Based in Senegambia, Kanifing</strong><p>Find us in the heart of the Kanifing Municipality — an easy starting point for river and nature experiences.</p></div>
+          </div>
+          <div class="about-point">
+            <div class="about-point-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/><path d="M2 16c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/><path d="M12 3v9"/><path d="M12 7C9 7 7 5 7 2c3 0 5 2 5 5zM12 9c0-3 2-5 5-5 0 3-2 5-5 5z"/></svg></div>
+            <div><strong>On and around the River Gambia</strong><p>Cruises, mangrove creeks, birding and village visits — experiences shaped by the river itself.</p></div>
+          </div>
+          <div class="about-point">
+            <div class="about-point-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg></div>
+            <div><strong>Sustainable by design</strong><p>Nature, culture and sustainable tourism — not as a slogan, but as how each tour is planned and run.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-visual-main"><img src="assets/mangrove-aerial.jpg" alt="Winding river channels cutting through dense green mangrove forest in The Gambia" /></div>
+        <div class="about-visual-card">
+          <div><span>Our promise</span><p>“A greener, more beautiful Gambia — one river journey at a time.”</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCES -->
+  <section class="section section--alt" id="experiences">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">Experiences &amp; Tours</div>
+        <h2>Ways to experience the river</h2>
+        <p>Choose the kind of day you want on the water and along its banks — from a safari day trip to the lions of Fathala Wildlife Reserve to the colour and bustle of Albert Market in Banjul. Tell us what interests you and when you’re visiting, and we’ll help shape the experience with you — enquire below for availability and details.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter experiences">
+        <button class="chip" data-filter="all" aria-pressed="true">All experiences</button>
+        <button class="chip" data-filter="river" aria-pressed="false">On the river</button>
+        <button class="chip" data-filter="nature" aria-pressed="false">Nature &amp; wildlife</button>
+        <button class="chip" data-filter="culture" aria-pressed="false">Culture</button>
+      </div>
+
+      <!-- Featured: River Cruises -->
+      <article class="exp-featured exp-item" data-cat="river">
+        <img src="assets/river-cruise.webp" alt="Visitors on a traditional boat moving along a mangrove-lined stretch of river in The Gambia" />
+        <div class="exp-body">
+          <div class="exp-tag">On the river · Signature experience</div>
+          <h3>River Cruises</h3>
+          <p>Drift the wide, calm waters of the River Gambia by boat, past mangrove banks, fishing activity and riverside settlements. A river cruise is the most relaxed way to take in the scale of the river — its light, its birdlife and the life that moves along it every day.</p>
+          <ul class="exp-list">
+            <li>Unhurried cruising on the main river and its quieter stretches</li>
+            <li>Mangrove-lined banks, open skies and ever-changing river light</li>
+            <li>A good first experience if you’re new to The Gambia</li>
+          </ul>
+          <a class="exp-link" href="#contact" data-enquire="River Cruises">Enquire about river cruises →</a>
+        </div>
+      </article>
+
+      <div class="exp-grid">
+        <article class="exp-card exp-item" data-cat="nature river">
+          <img src="assets/birdwatching.webp" alt="A birdwatcher with binoculars looking across the River Gambia toward palm trees and green riverbanks" />
+          <div class="exp-body">
+            <div class="exp-tag">Nature &amp; wildlife</div>
+            <h3>Birdwatching</h3>
+            <p>The riverbanks, creeks and wetlands around the River Gambia are rich birding country. Head out by boat and on foot to watch for the species that feed, nest and rest along the water — best enjoyed slowly, with time to stop, look and listen.</p>
+            <a class="exp-link" href="#contact" data-enquire="Birdwatching">Enquire about birdwatching →</a>
+          </div>
+        </article>
+
+        <article class="exp-card exp-item" data-cat="nature river">
+          <img src="assets/wetlands.jpg" alt="Aerial view of green mangrove islands and winding waterways meeting the wider river" />
+          <div class="exp-body">
+            <div class="exp-tag">Nature &amp; wildlife</div>
+            <h3>Mangrove &amp; Nature Tours</h3>
+            <p>Slip into the quieter world of the mangroves — narrow creeks, tangled roots and still green water. Mangrove tours show you the ecosystem that shelters young fish, feeds birdlife and protects the riverbanks, and why preserving it matters.</p>
+            <a class="exp-link" href="#contact" data-enquire="Mangrove & Nature Tours">Enquire about mangrove tours →</a>
+          </div>
+        </article>
+
+        <article class="exp-card exp-item" data-cat="culture">
+          <img src="assets/village.jpg" alt="Traditional thatched-roof homes in a rural Gambian village, surrounded by trees" />
+          <div class="exp-body">
+            <div class="exp-tag">Culture</div>
+            <h3>Cultural Village Visits</h3>
+            <p>Step ashore and meet The Gambia beyond the water. Village visits are a chance to see everyday life, traditional homes and community gathering places — including the bantaba itself — and to learn, respectfully and at a human pace, how riverside communities live.</p>
+            <a class="exp-link" href="#contact" data-enquire="Cultural Village Visits">Enquire about village visits →</a>
+          </div>
+        </article>
+
+        <article class="exp-card exp-item" data-cat="river">
+          <img src="assets/sunset-cruise.jpg" alt="A small boat silhouetted on calm river water as the sun sets over the River Gambia" />
+          <div class="exp-body">
+            <div class="exp-tag">On the river</div>
+            <h3>Sunset Cruises</h3>
+            <p>End the day on the water. As the sun drops toward the far bank, the river turns gold, the air cools and the day’s activity settles. A sunset cruise is a calm, beautiful way to close a day of exploring — or to mark a special occasion.</p>
+            <a class="exp-link" href="#contact" data-enquire="Sunset Cruises">Enquire about sunset cruises →</a>
+          </div>
+        </article>
+
+        <article class="exp-card exp-item" data-cat="nature">
+          <span class="new-badge">New</span>
+          <img src="assets/fathala-lions.jpg" alt="A lion resting on a sandy track in the green woodland of Fathala Wildlife Reserve" />
+          <div class="exp-body">
+            <div class="exp-tag">Nature &amp; wildlife · Day trip</div>
+            <h3>Fathala Wildlife Reserve</h3>
+            <p>Just across the border in Senegal’s Sine-Saloum region, Fathala is the closest safari to The Gambia. Head out on a guided drive through its woodland and grassland in search of the reserve’s stars — its lions — along with giraffes, rhinos, antelopes and warthogs. A big-wildlife day trip, arranged from the coast.</p>
+            <a class="exp-link" href="#contact" data-enquire="Fathala Wildlife Reserve">Enquire about Fathala →</a>
+          </div>
+        </article>
+
+        <article class="exp-card exp-item" data-cat="culture">
+          <span class="new-badge">New</span>
+          <img src="assets/albert-market.jpg" alt="The yellow Welcome to Royal Albert Market arch over bustling stalls and colourful umbrellas in Banjul" />
+          <div class="exp-body">
+            <div class="exp-tag">Culture · Banjul</div>
+            <h3>Albert Market, Banjul</h3>
+            <p>In the heart of the capital, under the famous yellow “Welcome to Royal Albert Market” arch, Banjul’s main market has traded since the 19th century. Wander stalls piled with colourful fabrics, wood carvings, jewellery, spices and fresh produce — and feel the everyday energy of the city, with your guide on hand to help you browse and bargain.</p>
+            <a class="exp-link" href="#contact" data-enquire="Albert Market, Banjul">Enquire about Albert Market →</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="exp-note"><strong>Planning something specific?</strong> If you have a group, a special interest — photography, birds, culture — or limited time in The Gambia, tell us in your enquiry and we’ll discuss what’s possible. Availability and details are confirmed personally by email or phone.</p>
+
+      <div class="banner" style="margin-top:26px">
+        <img src="assets/hero-river.jpg" alt="" aria-hidden="true" />
+        <div class="banner-content">
+          <h2>Nature • Culture • Sustainable Tourism</h2>
+          <p>Every Bantaba experience brings those three together — the natural world of the river, the culture of the people who live along it, and a way of travelling that keeps both thriving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUSTAINABILITY -->
+  <section class="section" id="sustainability">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">Sustainability · Why Bantaba</div>
+        <h2>Explore • Experience • Preserve</h2>
+        <p>Those three words are our working method. They describe what you do on a Bantaba experience — and what your visit helps to do in return.</p>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-num">01</div>
+          <h3>Explore<span>The river, properly</span></h3>
+          <p>We take you beyond the viewpoint — onto the water, into the creeks and ashore in the villages — so you understand the River Gambia as a living system, not just a backdrop. Exploration is guided, unhurried and curious.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">02</div>
+          <h3>Experience<span>Nature &amp; culture, up close</span></h3>
+          <p>Birdsong in the mangroves, gold light on evening water, conversation under the bantaba tree. We design for real encounters — with wildlife, with place and with people — rather than passing scenery.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">03</div>
+          <h3>Preserve<span>A greener, more beautiful Gambia</span></h3>
+          <p>Mangroves protect the banks, shelter wildlife and support the communities who depend on the river. Travelling gently — respecting wildlife, places and local life — helps keep the river healthy for the next visitor and the next generation.</p>
+        </div>
+      </div>
+
+      <div class="sustain-grid">
+        <div class="sustain-card">
+          <h3>How we travel gently</h3>
+          <p>On every experience, we ask guests to travel in a way that protects what they came to see:</p>
+          <ul>
+            <li>Observe wildlife from a respectful distance — never feed or chase it</li>
+            <li>Take litter back with you; leave banks and villages as you found them</li>
+            <li>Ask before photographing people, and follow your guide’s lead in villages</li>
+            <li>Keep voices low in the mangroves and birding areas</li>
+          </ul>
+        </div>
+        <div class="sustain-card alt">
+          <h3>Why the mangroves matter</h3>
+          <p>The green fringe along the River Gambia is far more than scenery. Mangrove roots shelter young fish, their canopy feeds and houses birdlife, and their dense banks hold the shoreline together against the water.</p>
+          <p style="margin-top:12px">When you explore the mangroves with us, you see that whole chain at work — and why sustainable tourism has a stake in keeping it intact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">Contact &amp; Enquiries</div>
+        <h2>Plan your visit</h2>
+        <p>Tell us which experience interests you and when you’re in The Gambia. Send an enquiry below — it opens in your email app, addressed to us — or simply call or email directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+            <div><small>Location</small><strong>Senegambia, Kanifing, The Gambia</strong><p>Kanifing Municipality (KMC)</p></div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></div>
+            <div><small>Phone</small><strong><a href="tel:+2207840353">+220 784 0353</a></strong><p>Call us to discuss your visit</p></div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
+            <div><small>Email</small><strong><a href="mailto:info@bantabariver.com">info@bantabariver.com</a></strong><p>For enquiries and bookings</p></div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg></div>
+            <div><small>Website</small><strong>bantabariver.com</strong><p>Bantaba River &amp; Eco-Tourism, The Gambia</p></div>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:4px">
+            <a class="btn btn-green" href="tel:+2207840353">Call +220 784 0353</a>
+            <a class="btn btn-outline" href="mailto:info@bantabariver.com">Email us directly</a>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h3>Send an enquiry</h3>
+          <p>Complete the form and press “Prepare email” — your email app will open with your enquiry ready to send to info@bantabariver.com.</p>
+          <form id="enquiryForm" novalidate>
+            <div class="form-grid">
+              <div class="field"><label for="fName">Your name *</label><input id="fName" name="name" type="text" autocomplete="name" placeholder="Your full name" required /></div>
+              <div class="field"><label for="fContact">Email or phone *</label><input id="fContact" name="contact" type="text" autocomplete="email" placeholder="How should we reply to you?" required /></div>
+              <div class="field"><label for="fExperience">Experience</label>
+                <select id="fExperience" name="experience">
+                  <option>River Cruises</option>
+                  <option>Birdwatching</option>
+                  <option>Mangrove &amp; Nature Tours</option>
+                  <option>Cultural Village Visits</option>
+                  <option>Sunset Cruises</option>
+                  <option>Fathala Wildlife Reserve</option>
+                  <option>Albert Market, Banjul</option>
+                  <option>Not sure yet — please advise</option>
+                </select>
+              </div>
+              <div class="field"><label for="fDate">Preferred date (if known)</label><input id="fDate" name="date" type="date" /></div>
+              <div class="field"><label for="fGuests">Group size</label>
+                <select id="fGuests" name="guests">
+                  <option>1–2 people</option><option>3–5 people</option><option>6–10 people</option><option>More than 10 people</option><option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="field"><label for="fStay">Where are you staying?</label><input id="fStay" name="stay" type="text" placeholder="e.g. Senegambia, Kololi, Kotu…" /></div>
+              <div class="field full"><label for="fMsg">Your message</label><textarea id="fMsg" name="message" placeholder="Tell us what you'd like to see and do, any special interests, and anything else that would help us plan with you…"></textarea></div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-gold">Prepare email enquiry →</button>
+              <a class="btn btn-outline" href="tel:+2207840353">Prefer to talk? Call us</a>
+            </div>
+            <div class="form-status" id="formStatus" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex; gap:12px; align-items:center">
+          <span class="brand-mark" aria-hidden="true" style="width:46px;height:46px;border-radius:50%;overflow:hidden;display:inline-block;background:#fdf6d8">
+            <svg viewBox="0 0 100 100" width="46" height="46"><rect width="100" height="100" fill="#fdf6d8"/><circle cx="50" cy="42" r="26" fill="#d9a92c"/><path d="M50 12 C58 22 66 24 68 34 C76 36 78 46 70 52 C66 60 54 60 50 54 C46 60 34 60 30 52 C22 46 24 36 32 34 C34 24 42 22 50 12Z" fill="#175c40"/><rect x="47.5" y="50" width="5" height="16" rx="2" fill="#6b4423"/><path d="M14 70 Q26 64 38 70 T62 70 T86 70" fill="none" stroke="#2f7d9d" stroke-width="4" stroke-linecap="round"/><path d="M28 68 L72 68 L66 76 L34 76 Z" fill="#103a2b"/></svg>
+          </span>
+          <div><h4 style="margin:0">Bantaba River &amp; Eco-Tourism</h4><div class="gold-line" style="font-size:12px; letter-spacing:.12em; text-transform:uppercase">Discover The Gambia… Naturally!</div></div>
+        </div>
+        <p>River tours and nature &amp; culture experiences on and around the River Gambia — nature, culture and sustainable tourism, for a greener, more beautiful Gambia.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About Bantaba</a></li>
+          <li><a href="#experiences">Experiences &amp; Tours</a></li>
+          <li><a href="#sustainability">Sustainability</a></li>
+          <li><a href="#contact">Contact &amp; Enquiries</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li>Senegambia, Kanifing, The Gambia</li>
+          <li><a href="tel:+2207840353">+220 784 0353</a></li>
+          <li><a href="mailto:info@bantabariver.com">info@bantabariver.com</a></li>
+          <li>bantabariver.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Bantaba River &amp; Eco-Tourism · The Gambia</span>
+      <span class="gold-line">EXPLORE • EXPERIENCE • PRESERVE</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Mobile menu
+  var btn = document.getElementById('menuBtn');
+  var menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ menu.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }); });
+
+  // Experience filters
+  var chips = document.querySelectorAll('.chip');
+  var items = document.querySelectorAll('.exp-item');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+      chip.setAttribute('aria-pressed','true');
+      var f = chip.getAttribute('data-filter');
+      items.forEach(function(item){
+        var cats = (item.getAttribute('data-cat')||'').split(' ');
+        var show = (f === 'all' || cats.indexOf(f) !== -1);
+        item.classList.toggle('hidden-card', !show);
+      });
+    });
+  });
+
+  // Enquire links pre-select the experience in the form
+  var select = document.getElementById('fExperience');
+  document.querySelectorAll('[data-enquire]').forEach(function(link){
+    link.addEventListener('click', function(){
+      var val = link.getAttribute('data-enquire');
+      for (var i = 0; i < select.options.length; i++){
+        if (select.options[i].text.replace(/\s+/g,' ').trim().toLowerCase() === val.toLowerCase() || select.options[i].value === val){ select.selectedIndex = i; break; }
+        if (select.options[i].text.toLowerCase().indexOf(val.toLowerCase().split(' ')[0]) === 0){ select.selectedIndex = i; }
+      }
+      // Exact matching by visible text where possible
+      for (var j = 0; j < select.options.length; j++){
+        var t = select.options[j].text;
+        if (t === val || t.replace('&amp;','&') === val){ select.selectedIndex = j; break; }
+      }
+    });
+  });
+
+  // Enquiry form -> mailto
+  var form = document.getElementById('enquiryForm');
+  var status = document.getElementById('formStatus');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('fName').value.trim();
+    var contact = document.getElementById('fContact').value.trim();
+    if (!name || !contact){
+      status.textContent = 'Please add your name and an email or phone number, so we can reply to your enquiry.';
+      status.classList.add('show');
+      return;
+    }
+    var exp = select.options[select.selectedIndex].text;
+    var date = document.getElementById('fDate').value;
+    var guests = document.getElementById('fGuests').value;
+    var stay = document.getElementById('fStay').value.trim();
+    var msg = document.getElementById('fMsg').value.trim();
+    var subject = 'Enquiry: ' + exp + ' — ' + name;
+    var lines = [
+      'Hello Bantaba River & Eco-Tourism,',
+      '',
+      'I would like to enquire about: ' + exp,
+      date ? 'Preferred date: ' + date : 'Preferred date: Not yet decided',
+      'Group size: ' + guests,
+      stay ? 'Staying at: ' + stay : '',
+      '',
+      msg ? msg : 'Please send me more details and availability.',
+      '',
+      'Name: ' + name,
+      'Reply to: ' + contact
+    ].filter(Boolean);
+    var href = 'mailto:info@bantabariver.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+    status.innerHTML = 'Your email app should now open with your enquiry ready to send to <strong>info@bantabariver.com</strong>. If it doesn\'t open, please email us directly or call <strong>+220 784 0353</strong>.';
+    status.classList.add('show');
+    window.location.href = href;
+  });
+
+  // Active nav link on scroll
+  var sections = ['about','experiences','sustainability','contact'];
+  var navLinks = document.querySelectorAll('.nav-links a');
+  if ('IntersectionObserver' in window){
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){
+          navLinks.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id); });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(function(id){ var el = document.getElementById(id); if (el) obs.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
